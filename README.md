@@ -14,7 +14,7 @@ It's expensive the bigger the array the longer the process to iterate each time.
 
 Ruby Sample
 
-for(int x=0; x<n; x++)
+```rubyfor(int x=0; x<n; x++)
     {
         int index_of_min = x;
         for(int y=x; y<n; y++)
@@ -28,5 +28,6 @@ for(int x=0; x<n; x++)
         array[x] = array[index_of_min];
         array[index_of_min] = temp;
     }
+    ```
     
     
