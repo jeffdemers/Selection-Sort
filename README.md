@@ -28,3 +28,4 @@ n.times do |i|
  # Yep, in ruby I can do that, no aux variable. w00t!
  a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
+
