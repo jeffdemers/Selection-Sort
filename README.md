@@ -10,7 +10,8 @@ Sorting people by height. Take the first person and adding them to the front of 
 
 # Is it good?
 
-It's expensive the bigger the array the longer the process to iterate each time.  
+The main advantage of the selection sort is that it performs well on a small list. Furthermore, because it is an in-place sorting algorithm, no additional temporary storage is required beyond what is needed to hold the original list. The primary disadvantage of the selection sort is its poor efficiency when dealing with a huge list of items.
+
 
 # Ruby Sample
 
