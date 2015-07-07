@@ -15,6 +15,7 @@ The main advantage of the selection sort is that it performs well on a small lis
 
 # Ruby Sample
 
+```
 a = [9,8,6,1,2,5,4,3,9,50,12,11]
 n = a.size - 1
 
@@ -28,4 +29,5 @@ n.times do |i|
  # Yep, in ruby I can do that, no aux variable. w00t!
  a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
+```
 
