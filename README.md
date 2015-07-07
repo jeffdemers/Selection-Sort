@@ -14,20 +14,16 @@ It's expensive the bigger the array the longer the process to iterate each time.
 
 Ruby Sample
 
-```rubyfor(int x=0; x<n; x++)
-    {
-        int index_of_min = x;
-        for(int y=x; y<n; y++)
-        {
-            if(array[index_of_min]>array[y])
-            {
-                index_of_min = y;
-            }
-        }
-        int temp = array[x];
-        array[x] = array[index_of_min];
-        array[index_of_min] = temp;
-    }
-    ```
-    
+<pre class="ruby">
+def selectionsort(list)
+ list.size.times do |start|
+   min = start
+   start.upto(list.size-1) do |i|
+     min = i if list[i] < list[min]
+   end
+   list[start], list[min] = list[min], list[start]
+ end
+ list
+end
+</pre>
     
