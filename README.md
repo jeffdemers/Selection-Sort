@@ -15,16 +15,16 @@ The main advantage of the selection sort is that it performs well on a small lis
 
 # Ruby Sample
 
-<pre class="ruby">
-def selectionsort(list)
- list.size.times do |start|
-   min = start
-   start.upto(list.size-1) do |i|
-     min = i if list[i] < list[min]
-   end
-   list[start], list[min] = list[min], list[start]
+a = [9,8,6,1,2,5,4,3,9,50,12,11]
+n = a.size - 1
+
+n.times do |i|
+ index_min = i
+
+ (i + 1).upto(n) do |j|
+   index_min = j if a[j] < a[index_min]
  end
- list
+ 
+ # Yep, in ruby I can do that, no aux variable. w00t!
+ a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
-</pre>
-    
